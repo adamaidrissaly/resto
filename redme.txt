@@ -1,0 +1,5 @@
+API Google Maps Key: AIzaSyB-WNluYl8HwEPJuIs8RGAmNu2eZH83W4w
+
+npm install @react-navigation/native
+
+expo install react-native-screens react-native-safe-area-context
