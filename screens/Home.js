@@ -15,7 +15,7 @@ const YELP_API_KEY =
 
 export default function Home({ navigation }) {
   const [restaurantData, setRestaurantData] = useState(localRestaurants);
-  const [citys, setCity] = useState("San Fransisco");
+  const [citys, setCity] = useState("Holliwood");
   const [activeTab, setActiveTab] = useState("Delivery");
 
   // console.log('----------------------------------- \n',restaurantData);
@@ -24,11 +24,11 @@ export default function Home({ navigation }) {
     // const yelpUrl = `https://api.yelp.com/v3/businesses/search?term=restaurants&location=${citys}`;
     const yelpUrl = "https://api.yelp.com/v3/businesses/search";
 
-    const apiOptions = {
-      headers: {
-        Authorization: `Bearer ${YELP_API_KEY}`,
-      },
-    };
+    // const apiOptions = {
+    //   headers: {
+    //     Authorization: `Bearer ${YELP_API_KEY}`,
+    //   },
+    // };
     //  fetch(yelpUrl, apiOptions)
 
     Axios({

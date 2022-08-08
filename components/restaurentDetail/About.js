@@ -5,7 +5,7 @@ const yelpRestaurantInfo = {
   name: "Farmhouse Kitchen Thai Cuisine",
   image:
     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAX24mAArguksZBK9UANFHOjk-At_I98a6Yw&usqp=CAU",
-  price: "$$",
+  price: "FOX",
   reviews: "1500",
   rating: 4.5,
   categories: [
