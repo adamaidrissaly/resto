@@ -8,7 +8,7 @@ import ViewCart from "../components/restaurentDetail/ViewCart";
 
 export default function RestaurantDatail({route, navigation}) {
   return (
-    <View>
+    <View style={{flex: 1}}>
       <About route={route && route} />
       <Divider width={1.8} style={{ marginVertical: 20 }} />
       <MenuItem />

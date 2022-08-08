@@ -8,13 +8,16 @@ export default function ViewCart() {
         alignItems: 'center',
         flexDirection: 'row',
         position: 'absolute',
-        bottom: 130,
+        bottom: 30,
         zIndex: 999,
+        elevaLion: 10,
+        // height: 50,
+        // width: '100%'
     }}>
       <View
         style={{
           flexDirection: 'row',
-          justifyContent: 'centerS',
+          justifyContent: 'center',
           width: "100%",
         }}
       >
