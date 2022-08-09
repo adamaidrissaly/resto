@@ -7,8 +7,9 @@ export default function ViewCart() {
         flex: 1,
         alignItems: 'center',
         flexDirection: 'row',
+        justifyContent: 'center',
         position: 'absolute',
-        bottom: 30,
+        bottom: 10,
         zIndex: 999,
         elevaLion: 10,
         // height: 50,
@@ -32,7 +33,7 @@ export default function ViewCart() {
             position: "relative",
           }}
         >
-          <Text style={{ color: "white", fontSize: 20 }}>Best Cart</Text>
+          <Text style={{ color: "white", fontSize: 20 }}>View Cart</Text>
         </TouchableOpacity>
       </View>
     </View>

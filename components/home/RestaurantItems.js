@@ -86,7 +86,7 @@ export const localRestaurants = [
   },
 ];
 
-export default function RestaurantItems({ navigation, ... props }) {
+export default function RestaurantItems({ navigation, ...props }) {
   return (
     <>
       {props.restaurantData &&

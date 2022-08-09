@@ -3,3 +3,56 @@ API Google Maps Key: AIzaSyB-WNluYl8HwEPJuIs8RGAmNu2eZH83W4w
 npm install @react-navigation/native
 
 expo install react-native-screens react-native-safe-area-context
+
+
+
+
+
+
+
+
+
+let defaultState = {
+  selectedItems: { items: [], restaurantName: "" },
+};
+
+let cartReducer = (state = defaultState, action) => {
+  switch (action.type) {
+    case "ADD_TO_CART": {
+      let newState = { ...state };
+      newState.selectedItems = {
+        items: [...newState.selectedItems.items, action.payload],
+        restaurantName: action.payload.restaurantName,
+      };
+
+      console.log(newState, "👉");
+
+      return newState;
+    }
+
+    default:
+      return state;
+  }
+};
+
+export default cartReducer;
+
+
+
+
+
+
+import { combineReducers } from "react-redux";
+// import {combineReducers} from 'redux'
+
+import cartReducer from "./cartReducer";
+
+let reducers = combineReducers({
+  cartReducer: cartReducer,
+});
+
+const rootReducer = (state, action) => {
+  return reducers(state, action);
+};
+
+export default rootReducer;

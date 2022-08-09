@@ -27,6 +27,7 @@
     "react-native-screens": "~3.11.1",
     "react-native-vector-icons": "^9.2.0",
     "react-native-web": "0.17.7",
+    "react-redux": "^8.0.2",
     "tslib": "^2.4.0",
     "yelp-fusion": "^3.0.0"
   },

@@ -36,6 +36,7 @@ export default function Home({ navigation }) {
       url: yelpUrl,
       params: {
         term: "restaurants",
+        // businesses: "businesses",
         location: citys,
       },
       headers: {
@@ -44,7 +45,7 @@ export default function Home({ navigation }) {
     })
       // .then((res) => res.json())
       .then((json) => {
-        console.log("--------------Request-------------\n", json);
+        // console.log("--------------Request-------------\n", json);
         setRestaurantData(
           json.businesses.filter((businesses) =>
             businesses.transactions.includes(activeTab.toLowerCase())
