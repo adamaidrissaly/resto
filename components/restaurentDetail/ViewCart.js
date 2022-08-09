@@ -1,8 +1,10 @@
-import { View, Text, TouchableOpacity } from "react-native";
-import React from "react";
+import { View, Text, TouchableOpacity, Modal } from "react-native";
+import React, { useState } from "react";
 import { useSelector } from "react-redux";
 
 export default function ViewCart() {
+  const [modalVisible, setModalVisible] = useState(false);
+
   const items = useSelector((state) => state.CartReducer.selectedItems.items);
 
   // '$13.50'
@@ -20,10 +22,34 @@ export default function ViewCart() {
     currency: "USD",
   });
 
-  console.log(totalUSD);
+  // console.log(totalUSD);
+
+  const checkoutModalContent = () => {
+    return (
+      <View style={{
+        backgroundColor: 'black',
+        padding: 10,
+        borderRadius: 30,
+        width: 130,
+        alignItems: "center",
+      }} >
+      <TouchableOpacity onPress={() => setModalVisible(false)} >
+        <Text style={{ color: "white" }}>Check Out</Text>
+      </TouchableOpacity>
+      </View>
+    );
+  };
 
   return (
     <>
+      <Modal
+        animationType="slide"
+        visible={modalVisible}
+        transparent={true}
+        onRequestClose={() => setModalVisible(false)}
+      >
+        {checkoutModalContent()}
+      </Modal>
       {total ? (
         <View
           style={{
@@ -56,10 +82,20 @@ export default function ViewCart() {
                 position: "relative",
               }}
             >
-              <Text style={{ color: "white", fontSize: 20, marginRight: 30, fontWeight: '800' }}>
+              <Text
+                style={{
+                  color: "white",
+                  fontSize: 20,
+                  marginRight: 30,
+                  fontWeight: "800",
+                }}
+              >
                 View Cart
               </Text>
-              <Text style={{color: "white", fontSize: 20}}> ${totalUSD} </Text>
+              <Text style={{ color: "white", fontSize: 20 }}>
+                {" "}
+                ${totalUSD}{" "}
+              </Text>
             </TouchableOpacity>
           </View>
         </View>

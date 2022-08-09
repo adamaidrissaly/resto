@@ -95,11 +95,12 @@ export default function MenuItem({ restaurantName }) {
       },
     });
 
-  const cartItems = useSelector((state) => state.CartReducer.selectedItems.items);
+  const cartItems = useSelector(
+    (state) => state.CartReducer.selectedItems.items
+  );
 
-  const isFoodInCart = (foods, cartItems) => 
-    Boolean(cartItems.find((item => item.title === foods.title)))
-  
+  const isFoodInCart = (foods, cartItems) =>
+    Boolean(cartItems.find((item) => item.title === foods.title));
 
   return (
     <ScrollView showsVerticalScrollIndicator={false}>
@@ -109,7 +110,7 @@ export default function MenuItem({ restaurantName }) {
             <BouncyCheckbox
               iconStyle={{ borderColor: "blue", borderRadius: 1 }}
               fillColor="green"
-              isChecked= {isFoodInCart(foods, cartItems)}
+              isChecked={isFoodInCart(foods, cartItems)}
               onPress={(checkboxValue) => selectItem(foods, checkboxValue)}
             />
             <FoodInfo foods={foods} />
