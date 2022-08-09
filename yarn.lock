@@ -1014,7 +1014,7 @@
     pirates "^4.0.5"
     source-map-support "^0.5.16"
 
-"@babel/runtime@^7.12.1", "@babel/runtime@^7.14.0", "@babel/runtime@^7.8.4":
+"@babel/runtime@^7.12.1", "@babel/runtime@^7.14.0", "@babel/runtime@^7.8.4", "@babel/runtime@^7.9.2":
   version "7.18.9"
   resolved "https://registry.npmjs.org/@babel/runtime/-/runtime-7.18.9.tgz"
   integrity sha512-lkqXDcvlFT5rvEjiu6+QYO+1GXrEHRo2LOtS7E4GtX5ESIZOgepqsZBVIj6Pv+a6zqsya9VCgiK1KAK4BvJDAw==
@@ -2042,6 +2042,11 @@ argparse@^2.0.1:
   resolved "https://registry.npmjs.org/argparse/-/argparse-2.0.1.tgz"
   integrity sha512-8+9WqebbFzpX9OR+Wa6O29asIogeRMzcGtAINdpMHHyAg10f05aSFVBbcEqGf/PXw1EjAZ+q2/bEBg3DvurK3Q==
 
+arguments@>=1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/arguments/-/arguments-1.0.0.tgz#d4c63864545501e916f55b5179d1d1b1c41a45ad"
+  integrity sha512-s/NffZ+ndyr/6INS2rnHWo+7n6ymWcMkt/DXr7e1PSlzWFzU+A1ovn29/cnnMpO9nzaLZq3qxLtSXrfxK/78yw==
+
 arr-diff@^4.0.0:
   version "4.0.0"
   resolved "https://registry.npmjs.org/arr-diff/-/arr-diff-4.0.0.tgz"
@@ -2665,6 +2670,18 @@ colorette@^1.0.7:
   version "1.4.0"
   resolved "https://registry.npmjs.org/colorette/-/colorette-1.4.0.tgz"
   integrity sha512-Y2oEozpomLn7Q3HFP7dpww7AtMJplbM9lGZP6RDfHqmbeRjiwRg4n6VM6j4KLmRke85uWEI7JqF17f3pqdRA0g==
+
+combine-reducers@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/combine-reducers/-/combine-reducers-1.0.0.tgz#7dd6cef42757d2e13bfb61c8560d846dd7ea169b"
+  integrity sha512-tHJPLwsi1Ux+vnPy/u3RYyxRdwDF4VkrDa97gWvK5T8ckoSZTnSDV2Ls39W2wE3v8rNnt+Li7eeZDY0pq4SZeA==
+
+combine@^0.1.4:
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/combine/-/combine-0.1.4.tgz#c1a23db416623ffa5fdcd6711695ce1511c91351"
+  integrity sha512-vfm3Buhk9s9MI73koocag5MlSdvzUoBFfL/cKphLoRl9BdS0uZYTIHUziSqVi+++cGg4tZpFQX7nzLfbV+KHEg==
+  dependencies:
+    arguments ">=1.0.0"
 
 combined-stream@^1.0.8:
   version "1.0.8"
@@ -5827,6 +5844,13 @@ recast@^0.20.4:
     esprima "~4.0.0"
     source-map "~0.6.1"
     tslib "^2.0.1"
+
+redux@^4.2.0:
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/redux/-/redux-4.2.0.tgz#46f10d6e29b6666df758780437651eeb2b969f13"
+  integrity sha512-oSBmcKKIuIR4ME29/AeNUnl5L+hvBq7OaJWzaptTQJAntaPvxIJqfnjbaEiCzzaIz+XmVILfqAM3Ob0aXLPfjA==
+  dependencies:
+    "@babel/runtime" "^7.9.2"
 
 regenerate-unicode-properties@^10.0.1:
   version "10.0.1"

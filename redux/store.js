@@ -1,7 +1,8 @@
-import { createStore } from "react-redux";
+import { createStore } from "redux";
 
-import reducers from "./reducers/index";
+import reducer from "./reducers/index";
 
 export default function configureStore(initialState) {
-  return createStore(reducers, initialState);
+  const store = createStore(reducer, initialState)
+  return store;
 }
