@@ -11,7 +11,7 @@ export default function RestaurantDatail({route, navigation}) {
     <View style={{flex: 1}}>
       <About route={route && route} />
       <Divider width={1.8} style={{ marginVertical: 20 }} />
-      <MenuItem />
+      <MenuItem restaurantName={ route && route.params.name} />
       <ViewCart navigation={navigation} restaurantName={ route && route.params.name} /> 
     </View>
   );
