@@ -9,7 +9,7 @@ export default function About(props) {
   const formattedCategories = categories.map((cat) => cat).join(" . ");
 
   const description = `${formattedCategories} ${
-    price ? " . " + price : ""
+    price ? " . " + price : "$"
   } . 🎫 . ${rating} . 🌟 . (${reviews} +)`;
   return (
     <View>
